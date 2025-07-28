@@ -414,6 +414,38 @@ function App() {
         </div>
       </div>
 
+      {/* Video Section */}
+      <div className="py-16 bg-gradient-to-br from-amber-50 to-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-8">
+            <div className="flex items-center justify-center mb-4">
+              <Sparkles className="w-8 h-8 text-amber-500 mr-2" />
+              <h2 className="text-3xl font-bold bg-gradient-to-r from-amber-700 to-yellow-600 bg-clip-text text-transparent">Veja o Perfume em Ação</h2>
+            </div>
+            <p className="text-lg text-gray-600">Confira este vídeo exclusivo sobre o Chloé EDP</p>
+          </div>
+          
+          <div className="flex justify-center">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-200 max-w-md mx-auto">
+              {/* Efeito de brilho ao redor do vídeo */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 rounded-2xl opacity-50 blur-md"></div>
+              
+              <div className="relative aspect-[9/16] w-full max-w-[356px] mx-auto">
+                <iframe 
+                  className="w-full h-full rounded-xl" 
+                  src="https://www.youtube.com/embed/YSnELABhbSo" 
+                  title="26 de julho de 2025" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Coverage Area */}
       <div className="py-16 bg-gradient-to-br from-gray-50 to-slate-50">
         <div className="max-w-7xl mx-auto px-4">

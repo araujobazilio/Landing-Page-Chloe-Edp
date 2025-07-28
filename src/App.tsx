@@ -200,6 +200,16 @@ function App() {
                 href="https://entrega.logzz.com.br/pay/mem8yxrpk/rnqzj-1-unidadee"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  // @ts-ignore - Função global definida no index.html
+                  if (window.gtag_report_conversion) {
+                    // @ts-ignore
+                    window.gtag_report_conversion('https://entrega.logzz.com.br/pay/mem8yxrpk/rnqzj-1-unidadee');
+                  } else {
+                    window.location.href = 'https://entrega.logzz.com.br/pay/mem8yxrpk/rnqzj-1-unidadee';
+                  }
+                }}
                 className="relative bg-gradient-to-r from-amber-600 to-yellow-500 text-white py-4 px-10 rounded-full text-lg font-bold shadow-lg shadow-amber-500/40 hover:shadow-xl hover:scale-[1.03] transition-all duration-300 flex items-center justify-center gap-3 overflow-hidden group border border-amber-300/80"
               >
                 {/* Efeito de brilho no hover */}
@@ -469,6 +479,16 @@ function App() {
               href="https://entrega.logzz.com.br/pay/mem8yxrpk/rnqzj-1-unidadee"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => {
+                e.preventDefault();
+                // @ts-ignore - Função global definida no index.html
+                if (typeof window.gtag_report_conversion === 'function') {
+                  // @ts-ignore
+                  window.gtag_report_conversion('https://entrega.logzz.com.br/pay/mem8yxrpk/rnqzj-1-unidadee');
+                } else {
+                  window.location.href = 'https://entrega.logzz.com.br/pay/mem8yxrpk/rnqzj-1-unidadee';
+                }
+              }}
               className="inline-flex items-center gap-3 bg-white text-amber-600 px-10 py-5 rounded-xl font-bold text-xl hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border border-amber-300"
             >
               <Zap className="w-6 h-6" />
@@ -526,6 +546,16 @@ function App() {
                 href="https://entrega.logzz.com.br/pay/mem8yxrpk/rnqzj-1-unidadee"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  // @ts-ignore - Função global definida no index.html
+                  if (window.gtag_report_conversion) {
+                    // @ts-ignore
+                    window.gtag_report_conversion('https://entrega.logzz.com.br/pay/mem8yxrpk/rnqzj-1-unidadee');
+                  } else {
+                    window.location.href = 'https://entrega.logzz.com.br/pay/mem8yxrpk/rnqzj-1-unidadee';
+                  }
+                }}
                 className="relative bg-gradient-to-r from-amber-600 to-yellow-500 text-white py-5 px-12 rounded-full text-xl font-bold shadow-lg shadow-amber-500/40 hover:shadow-xl hover:scale-[1.03] transition-all duration-300 flex items-center justify-center gap-3 overflow-hidden group border border-amber-300/80"
               >
                 {/* Efeito de brilho no hover */}

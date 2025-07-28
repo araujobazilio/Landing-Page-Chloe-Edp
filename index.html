@@ -14,6 +14,21 @@
       gtag('js', new Date());
 
       gtag('config', 'AW-17293302835');
+      
+      // Função para rastrear conversões do Google Ads
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17293302835/u_6tCJSF1voaELO4i7ZA',
+            'transaction_id': '',
+            'event_callback': callback
+        });
+        return false;
+      }
     </script>
   </head>
   <body>
